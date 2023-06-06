@@ -109,7 +109,7 @@ def vad_collector(sample_rate, frame_duration_ms, padding_duration_ms, vad, fram
     for frame in frames:
         is_speech = vad.is_speech(frame.bytes, sample_rate)
 
-        # sys.stdout.write('1' if is_speech else '0')
+        
 
         if not triggered:
             ring_buffer.append((frame, is_speech))
@@ -162,14 +162,10 @@ def get_chunks(path):
     vad = webrtcvad.Vad(3) # agressiveness
     frames = frame_generator(30, audio, sample_rate)
     frames = list(frames)
-    
-
     segments = vad_collector(sample_rate, 30, 300, vad, frames)
-    
     
     dir = '/home/auishik/webrtc_silero_vad/chunks'
 
-    
     for i, segment in enumerate(segments):
         pass
         
@@ -187,8 +183,6 @@ def create_audio_chunks(audio_file, start_end_points):
     return audio_chunks
 
 if __name__ == "__main__":
-       
     get_chunks('/home/auishik/webrtc_silero_vad/joinedAudio.wav')
-    
     print("Done")
             

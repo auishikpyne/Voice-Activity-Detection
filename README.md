@@ -1,2 +1,2 @@
 # Voice-Activity-Detection
-Voice Activity Detection
+Voice Activity Detection (VAD) is a technology used to identify segments of audio that contain human speech. It plays a vital role in various speech-related applications, such as automatic speech recognition, voice assistants, audio processing, and more. VAD algorithms aim to distinguish between speech and non-speech (silence or background noise) to efficiently process and analyze audio signals.

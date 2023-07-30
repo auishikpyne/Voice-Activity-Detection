@@ -4,6 +4,6 @@
 
 ```bash
 pip install -r requirements.txt
-'''
+```
 Make sure to use Python 3.8.16
 

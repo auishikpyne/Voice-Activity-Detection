@@ -11,5 +11,5 @@ Use [silero_vad_revised.py](silero_vad_revised.py) to get the Speech chunks or s
 
 To optimize the chunks of the vad output for various purposes please change the value of these parameters `threshold` and `min_silence_duration_ms` 
 
-`vad = SileroVAD(threshold=0.5, min_silence_duration_ms=100, use_onnx=False)`
+Default `vad = SileroVAD(threshold=0.5, min_silence_duration_ms=100, use_onnx=False)`
 
